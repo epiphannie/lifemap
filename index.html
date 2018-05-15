@@ -3,19 +3,21 @@
 <html>
   <head>
     <title>The Places I've Been</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
     <body>
       <h1>The Places I've Been</h1>
       <h2>A clickable life map</h2>
         <div class="container">
-          <div id="directory">
+          <div class="row">
+            <div class ="col-lg-3" id="directory">
               <ul>
                 <li id="stCloud">St. Cloud, Minnesota</li>
                 <li id="foley">Foley, Minnesota</li>
-                <li id="glastonburty">Glastonbury, Connecticut</li>
+                <li id="glastonbury">Glastonbury, Connecticut</li>
                 <li>Moved Overseas
                   <ul>
                     <li id="cairo">Cairo, Egypt</li>
@@ -34,31 +36,29 @@
                     <li id="montpellier">Montpellier, France</li>
                   </ul>
                 </li>
-              <li id="gainesville">Gainesville, Florida</li>
-              <li id="louisvilleSecond">Louisville, Kentucky</li>
-              <li id="tokyo">Tokyo, Japan</li>
-              <li id="southwest">The Great American Southwest!</li>
-              <li id="provo">Providenciales, Turks and Caicos</li>
-            </ul>
-          </div>
-          <div id="contentDisplay">
-            <div id="photoDiv">
-              <p>There is a photo here</p>
+                <li id="gainesville">Gainesville, Florida</li>
+                <li id="louisvilleSecond">Louisville, Kentucky</li>
+                <li id="tokyo">Tokyo, Japan</li>
+                <li id="southwest">The Great American Southwest!</li>
+                <li id="provo">Providenciales, Turks and Caicos</li>
+              </ul>
             </div>
+            <div class="col" id="contentDisplay">
+              <div id="photoDiv">
+                <p>There is a photo here</p>
+              </div>
 
-            <div id="mapDiv">
-              <p>There is a map here</p>
-            </div>
+              <div id="mapDiv">
+                <p>There is a map here</p>
+              </div>
 
-            <div id="descriptionDiv">
-              <p>There is a description of some life stuff here</p>
+              <div id="descriptionDiv">
+              </div>
             </div>
-          </div>
-        </div>
-      <script
-  			  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  			  crossorigin="anonymous"></script>
+          </div> <!--End row-->
+        </div> <!--End container-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/lifeobjects.js"></script>
     <script src="js/app.js"></script>
     </body>
 </html>

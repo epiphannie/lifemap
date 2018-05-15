@@ -1,6 +1,7 @@
 left menu bar:
 - clickable life events
   - what happens?
+  - list items need a hover state and a focus state
 
 right content bar:
   - Map

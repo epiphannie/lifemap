@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
 }
 
 /* Element selectors ----------------- */
@@ -24,37 +23,9 @@ li {
 
 /* Class selectors ----------------- */
 
-.container {
-  display: flex;
-  flex-direction: row;
-}
 
 /* ID selectors ----------------- */
 
-#directory {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-
-}
-
-#contentDisplay {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 4;
-}
-
-#mapDiv {
-  flex-grow: 1;
-}
-
-#photoDiv {
-  flex-grow: 1;
-}
-
-#descriptionDiv {
-  flex-grow: 1;
-}
 
 /* Pseudo selectors ----------------- */
 
