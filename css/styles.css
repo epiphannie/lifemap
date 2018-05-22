@@ -1,33 +1,65 @@
 body {
   box-sizing: border-box;
-  /* background-color: #143969; */
+  background-color: #143969;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Element selectors ----------------- */
-
+h1 {
+font-size: 3em;
+}
 
 h1,
 h2 {
-    color: #d6c571;
-    text-align: center;
-    margin: 50px 0px;
-
+  color: #d6c571;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
+header {
+  background-color: #2e8174;
+}
 
+li {
+  list-style: none;
+}
 
 /* Class selectors ----------------- */
+.event {
+  color: 	#f34236;
+}
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+}
 
 /* ID selectors ----------------- */
+
+
 #contentDisplay {
+  flex-grow: 2;
+  flex-direction: column;
   overflow: hidden;
   margin: auto;
 }
 
-#descriptionDiv{
+#descriptionDiv {
     text-align: center;
     color:  	#f34236;
+    padding: 25px;
+}
+
+#directory {
+  flex-grow: 1;
+}
+
+#photoDiv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 

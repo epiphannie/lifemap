@@ -2,75 +2,48 @@
 
 <html>
   <head>
-    <title>The Places I've Been</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>McLifeMap</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
     <body>
-      <h1>The Places I've Been</h1>
-      <h2>A clickable life map</h2>
+      <header>
+        <h1>Where in the world is Carmen Ann-deigo?</h1>
+        <h2>A clickable life map</h2>
+      </header>
         <div class="container">
-          <div class="row">
-            <div class ="col-lg-3" id="directory">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a id="stCloud" class="nav-link" href="#">St. Cloud, Minnesota</a>
-                </li>
-                <li class="nav-item">
-                  <a id="foley" class="nav-link" href="#">Foley, Minnesota</a>
-                </li>
-                <li class="nav-item">
-                  <a id="glastonbury" class="nav-link" href="#">Glastonbury, Connecticut</a>
-                </li>
-                <li class="nav-item">Moved Overseas
-                  <a id="cairo" class="nav-link" href="#">Cairo, Egypt</a>
-                  <a id="khartoum" class="nav-link" href="#">Khartoum, Sudan</a>
-                  <a id="addisAbaba" class="nav-link" href="#">Addis Ababa, Ethiopia</a>
-                </li>
-                <li class="nav-item">
-                  <a id="louisvilleFirst" class="nav-link" href="#">Louisville, Kentucky</a>
-                </li>
-                <li class="nav-item">
-                  <a id="Paris" class="nav-link" href="#">Paris, France</a>
-                </li>
-                <li class="nav-item">Study Abroad
-                  <a id="dijon" class="nav-link" href="#">Dijon, France</a>
-                  <a id="montreux" class="nav-link" href="#">Montreux, Switzerland</a>
-                  <a id="florence" class="nav-link" href="#">Florence, Italy</a>
-                  <a id="rome" class="nav-link" href="#">Rome, Italy</a>
-                  <a id="nice" class="nav-link" href="#">Nice, France</a>
-                  <a id="montpellier" class="nav-link" href="#">Montpellier, France</a>
-                </li>
-                <li class="nav-item">
-                  <a id="gainesville" class="nav-link" href="#">Gainesville, Florida</a>
-                </li>
-                <li class="nav-item">
-                  <a id="louisvilleSecond" class="nav-link" href="#">Louisville, Kentucky</a>
-                </li>
-                <li class="nav-item">
-                  <a id="tokyo" class="nav-link" href="#">Tokyo, Japan</a>
-                </li>
-                <li class="nav-item">
-                  <a id="southwest" class="nav-link" href="#">The Great American Southwest!</a>
-                </li>
-                <li class="nav-item">
-                  <a id="provo" class="nav-link" href="#">Providenciales, Turks and Caicos</a>
-                </li>
-              </ul>
+          <div id="directory">
+            <ul>
+              <li>
+                <div id="childhoodEvents">Childhood</div>
+              </li>
+              <li>
+                <div id="overseasEvents">Moved Overseas</div>
+              </li>
+              <li>
+                <div id="highschoolEvents">Teenage Years</div>
+              </li>
+              <li>
+                <div id="studyAbroadEvents">Study Abroad</div>
+              </li>
+              <li>
+                <div id="gradEvents">Grad School</div>
+              </li>
+              <li>
+                <div id="homebaseEvents">Homebase!</div>
+              </li>
+          </div>
+          <div id="contentDisplay">
+            <div id="photoDiv">
             </div>
-            <div class="col" id="contentDisplay">
-              <div id="photoDiv">
-              </div>
 
-              <div id="descriptionDiv">
-              </div>
+            <div id="descriptionDiv">
+            </div>
 
-              <div id="mapDiv">
-              </div>
-            </div><!--End content column-->
-          </div> <!--End row-->
+            <div id="mapDiv">
+            </div>
+          </div><!--End content column-->
         </div> <!--End container-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="js/lifeobjects.js"></script>

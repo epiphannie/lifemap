@@ -1,21 +1,32 @@
-$('#directory a').on('click', function(event){
+function buildNav(list) {
+  var navHTML='';
+  for (i=0; i < list.length; i++) {
+    navHTML += '<div id="';
+    navHTML += list[i]['place']
+    navHTML += '" class="event">';
+    navHTML += list[i]['longName'];
+    navHTML += '</div>';
+  }//end for loop
+  return navHTML;
+}
+
+// function insertNav(list){
+//   return "$(" + "'#" + list + "').append((buildNav(" + list + ")));"
+// }
+// insertNav(childhoodEvents);
+$('#childhoodEvents').append((buildNav(childhoodEvents)));
+$('#overseasEvents').append((buildNav(overseasEvents)));
+$('#highschoolEvents').append((buildNav(highschoolEvents)));
+$('#studyAbroadEvents').append((buildNav(studyAbroadEvents)));
+$('#gradEvents').append((buildNav(gradEvents)));
+$('#homebaseEvents').append((buildNav(homebaseEvents)));
+
+$('.event').on('click', function(event){
   var placeClicked = ($(event.target).attr('id'));
-  console.log(placeClicked)
-
-  function findObject(targetId) {
-    for (var i = 0; i < lifeEvents.length; i++) {
-        if (lifeEvents[i]['place'] == targetId) {
-            return lifeEvents[i];
-        }
-    }
-    return null;
-  }
-
-  var placeObject = findObject(placeClicked);
-
-  console.log(placeObject)
-
-  $('#descriptionDiv').html('<p>"' + placeObject.content + '"</p>');
+  var placeObject = lifeEvents[placeClicked];
+  // console.log(placeObject['background']);
+  $('#contentDisplay').css("background-image", "url(" + placeObject['background'] +")");
+  $('#descriptionDiv').html('<p>' + placeObject.content + '</p>');
   $('#photoDiv').html('<img src="' + placeObject.photo + '" alt="' + placeObject.place + '">');
   $('#mapDiv').html(placeObject.map);
 }); //end on click
