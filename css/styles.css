@@ -1,38 +1,55 @@
 body {
   box-sizing: border-box;
-  background-color: #143969;
-  font-family: 'Lato', sans-serif;
+  background-color: white;
+  font-family: 'Dosis', sans-serif;
 }
 
 /* Element selectors ----------------- */
+
+
 h1 {
-font-size: 3em;
+  font-size: 3em;
+  color: #c37f7c;
+  float: left;
+  padding: 16px;
 }
 
-h1,
-h2 {
-  color: #d6c571;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-header {
-  background-color: #2e8174;
+img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 li {
   list-style: none;
 }
 
+div {
+  border: 1px solid #f0e2ae;
+}
+
 /* Class selectors ----------------- */
+
+.title-image {
+  height: 500px;
+  position: relative; /* for placing text over image header */
+  text-align: center;
+}
+
+.teaser {
+  text-align: center;
+  font-size: 1em;
+}
+
 .event {
-  color: 	#f34236;
+  color: 	#c37f7c;
 }
 
 .container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 /* ID selectors ----------------- */
@@ -43,6 +60,7 @@ li {
   flex-direction: column;
   overflow: hidden;
   margin: auto;
+  color: #c37f7c;
 }
 
 #descriptionDiv {
@@ -67,3 +85,12 @@ li {
 
 
 /* Media Queries ----------------- */
+@media(min-width: 450px) {
+  h1 {
+    font-size: 4em;
+    color: #c37f7c;
+    position: absolute; /* positions text over image */
+    top: 8px;
+    left: 16px;
+  }
+}
